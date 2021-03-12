@@ -561,6 +561,11 @@ figure.snip1321 figcaption {
   opacity: 0;
   z-index: 1;
 }
+figure.snip1321 h5 {
+  margin-top: 7px;
+  margin-bottom: 3px;
+  color: #232323;
+}
 figure.snip1321 h4 {
   margin-top: 15px;
   margin-bottom: 5px;
