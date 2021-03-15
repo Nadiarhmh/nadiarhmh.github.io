@@ -564,12 +564,22 @@ figure.snip1321 figcaption {
 figure.snip1321 h5 {
   margin-top: 7px;
   margin-bottom: 3px;
+  color: #ffffff;
+}
+figure.snip1321 ol {
+  margin-top: 15px;
+  margin-bottom: 3px;
+  color: #232323;
+}
+figure.snip1321 li {
+  margin-top: 10px;
+  margin-bottom: 3px;
   color: #232323;
 }
 figure.snip1321 h4 {
   margin-top: 15px;
   margin-bottom: 5px;
-  color: #232323;
+  color: #ffffff;
 }
 figure.snip1321 span {
   font-size: 14px;
