@@ -147,7 +147,6 @@ https://templatemo.com/tm-531-reflux
                 <div class="row">
                     <div class="col-md-6">
                         <div class="service-item">
-                            <!-- <div class="first-service-icon service-icon"></div> -->
                             <h4>Ms. Word</h4>
                             <p>
                                 My skills in Microsoft Word, I can make curriculum vitae,
@@ -158,18 +157,16 @@ https://templatemo.com/tm-531-reflux
                     </div>
                     <div class="col-md-6">
                         <div class="service-item">
-                            <!-- <div class="third-service-icon service-icon"></div> -->
-                            <h4>Ms. Power Point</h4>
+                            <h4>Adobe Photoshop</h4>
                             <p>
-                                My skills in Microsoft Power Point,
-                                I can make presentation points and also make presentation videos with PowerPoint.
+                                My skills in Adobe Photoshop,
+                                I can manipulate photos and also make photos more pleasing to the eye.
                                 Anything other than that I will definitely learn.
                             </p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="service-item">
-                            <!-- <div class="second-service-icon service-icon"></div> -->
                             <h4>Ms. Excel</h4>
                             <p>
                                 My skills in Microsoft Excel,
@@ -181,7 +178,6 @@ https://templatemo.com/tm-531-reflux
                     </div>
                     <div class="col-md-6">
                         <div class="service-item">
-                            <!-- <div class="fourth-service-icon service-icon"></div> -->
                             <h4>Customer Relation</h4>
                             <p>
                                 I can maintain relationships with customers because of my
@@ -192,18 +188,16 @@ https://templatemo.com/tm-531-reflux
                     </div>
                     <div class="col-md-6">
                         <div class="service-item">
-                            <!-- <div class="fourth-service-icon service-icon"></div> -->
-                            <h4>Adobe Photoshop</h4>
+                            <h4>Ms. Power Point</h4>
                             <p>
-                                My skills in Adobe Photoshop,
-                                I can manipulate photos and also make photos more pleasing to the eye.
+                                My skills in Microsoft Power Point,
+                                I can make presentation points and also make presentation videos with PowerPoint.
                                 Anything other than that I will definitely learn.
                             </p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="service-item">
-                            <!-- <div class="fourth-service-icon service-icon"></div> -->
                             <h4>Creative</h4>
                             <p>
                                 In terms of creativity, in my opinion, I am able to apply what
@@ -309,35 +303,33 @@ https://templatemo.com/tm-531-reflux
                 <div class="row justify-content-center">
                     <div class="right-content">
                         <div class="container">
-                            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-                                <strong>Thank You! </strong> We've received your message.
-                                <button type="button" class="btn-close" data-bs-dismiss="alert"
-                                    aria-label="Close"></button>
-                            </div>
-                            <form id="contact" action="" method="post" name="contact">
+                            <form id="contact" action="https://formsubmit.co/nadia.auliarahmah.nar@gmail.com"
+                                method="post" name="contact">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="http://localhost/nadia/">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <fieldset>
-                                            <input name="nama" type="text" class="form-control" id="name"
-                                                placeholder="Your name..." required="" />
+                                            <input name="name" type="text" class="form-control" id="name"
+                                                placeholder="Your name..." required />
                                         </fieldset>
                                     </div>
                                     <div class="col-md-6">
                                         <fieldset>
                                             <input name="email" type="text" class="form-control" id="email"
-                                                placeholder="Your email..." required="" />
+                                                placeholder="Your email..." required />
                                         </fieldset>
                                     </div>
                                     <div class="col-md-12">
                                         <fieldset>
                                             <input name="subject" type="text" class="form-control" id="subject"
-                                                placeholder="Subject..." required="" />
+                                                placeholder="Your subject..." required />
                                         </fieldset>
                                     </div>
-                                    <div class="col-md-12">
+                                    <div class=" col-md-12">
                                         <fieldset>
                                             <textarea name="message" rows="6" class="form-control" id="message"
-                                                placeholder="Your message..." required=""></textarea>
+                                                placeholder="Your message..." required></textarea>
                                         </fieldset>
                                     </div>
                                     <div class="col-md-12">
@@ -375,36 +367,6 @@ https://templatemo.com/tm-531-reflux
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyAmZmefE4494tDs04Cv3mNXMoacOPDIMR4YJuFT-HraFkvVF3DSUS2I4wT5AZZG0YJUw/exec';
-        const form = document.forms['contact'];
-        const btnKirim = document.querySelector('.btn-kirim');
-        const btnLoading = document.querySelector('.btn-loading');
-        const myAlert = document.querySelector('.my-alert');
-
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            // ketika tombol submit di klik
-            // tampilkan tombol loading, hilangkan tombol kirim
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    btnLoading.classList.toggle('d-none');
-                    btnKirim.classList.toggle('d-none');
-                    myAlert.classList.toggle('d-none');
-                    window.setTimeout(function () {
-                        $(".alert").fadeTo(500, 0).slideUp(500, function () {
-                            $(this).remove();
-                        })
-                    }, 3000);
-                    form.reset();
-                    console.log('Success!', response);
-                })
-                .catch(error => console.error('Error!', error.message))
-        });
-    </script>
 
     <script>
         //according to loftblog tut
